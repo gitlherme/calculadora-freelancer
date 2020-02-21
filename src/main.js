@@ -22,14 +22,14 @@ function getElements() {
 
 
 calcularHora.addEventListener('click', () => {
-    let el = getElements(),
-        horasDiarias = el.horasDiarias.value,
-        diasEfetivos = el.diasEfetivos.value,
-        diasFerias = el.diasFerias.value,
-        valorProjeto = el.valorProjeto.value, 
-        valorHora = (valorProjeto / (diasEfetivos * 4 * horasDiarias) ) + ( ( diasFerias * diasEfetivos * horasDiarias ) )
-    
-    let textShow = `Seu valor por hora é: R$${valorHora.toFixed(2)}`
+  clearElement(showResult)
+  let el = getElements(),
+      horasDiarias = el.horasDiarias.value,
+      diasEfetivos = el.diasEfetivos.value,
+      diasFerias = el.diasFerias.value,
+      valorProjeto = el.valorProjeto.value, 
+      valorHora = (valorProjeto / (diasEfetivos * 4 * horasDiarias) ) + ( ( diasFerias * diasEfetivos * horasDiarias ) )
+  let textShow = `Seu valor por hora é: R$${valorHora.toFixed(2)}`
       newContent = document.createTextNode(textShow)
       showResult.appendChild(newContent)
       document.innerHTML = showResult
