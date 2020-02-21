@@ -30,6 +30,9 @@ header {
 .info {
   grid-column: 2/6;
   height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .info p {
   font-size: 14px;
