@@ -1,0 +1,52 @@
+header {
+  background-color: $primary-color;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+  
+}
+input[type=number] { 
+ -moz-appearance: textfield;
+ appearance: textfield;
+}
+
+.input-number {
+  border: none;
+  border-bottom: 2px solid $primary-color;
+  width: 200px;
+  text-align: center;
+  padding: 5px;
+}
+
+
+.card {
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #ccc;
+  color: $primary-color;
+  font-size: 18px;
+  font-family: 'Questrial';
+  padding: 20px;
+  h1, h3 {
+    font-family: 'Viga';
+  }
+  h1 {
+    font-size: 22px;
+  }
+}
+
+.btn {
+  padding: 10px 20px;
+  background: $primary-color;
+  font-family: 'Questrial';
+  color: #FFF;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  opacity: .4;
+  &:hover {
+    transition: all .3s linear;
+    opacity: 1;
+  }
+}

@@ -4,12 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
+    <main>
+      <header>
+        <img src="../assets/images/heart-logo.png" alt="Logo da He4rtDevs" class="logo-heart">
+      </header>
+      <div class="container">
+        <div class="card info">
+          <h3 id="card-info-title">Tempo diário investido no projeto</h3>
+          <p id="card-info-text">Agora vamos entender um pouco mais sobre esses fatores começando pelo fator tempo diário investido. Quando tratamos de freelances, há uma certa demanda do seu tempo em off. Ou seja: depois do trabalho, escola ou aquele tempinho vago no final do dia que você usa pra relaxar e descontrair. Esse tempo é algo muito valioso para qualquer pessoa, certo? Então claramente temos que levar esse fator em consideração.</p>
+        </div>
+        <div class="card main-card">
+          <h1>Calculadora para Freelancer</h1>
+          <label>Tempo diário investido no projeto</label>
+          <input type="number" id="horas-diarias" class="input-number">
+          <label>Dias efetivos trabalhando</label>
+          <input type="number" id="dias-efetivos" class="input-number">
+          <label>Dias de férias do projeto</label>
+          <input type="number" id="dias-ferias" class="input-number">
+          <label>Valor total do projeto</label>
+          <input type="number" id="valor-projeto" class="input-number">
+          <button class="btn" id="calcular-hora">Calcular</button>
+          <span id="show-result"></span>
+        </div>
+      </div>
+    </main>
     <script src="./main.js"></script>
   </body>
 </html>
